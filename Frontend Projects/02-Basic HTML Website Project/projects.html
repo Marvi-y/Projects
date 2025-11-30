@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marvi´s Projects</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+           padding: 20px;
+           display: flex;
+           justify-content: space-between;
+        }
+
+        .social-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-wrapper img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            transition: 0.25s;
+        }
+
+        .social-wrapper img:hover {
+            transform: scale(1.1);
+        }
+        .perfil {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .foto-perfil {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            margin-top: 35px;
+            font-size: 12px;
+            opacity: 0.6;
+            text-align: center;
+            padding: 20px;
+        }
+        p{
+            opacity: 0.6;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="perfil">
+            <img src="https://i.imgur.com/cEKxO6j.jpg" alt="Foto de perfil" class="foto-perfil">
+            <h2>Marvi</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="articles.html">Articles</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>HTML Only Portfolio</li>
+          <p>A portfolio made to complete a Roadmap.sh project</p>
+          <li>Calculator</li>
+          <p>A Web Calculator that do basic arithmetics operations</p>
+          <li>Quiz App</li>
+          <p>A simple Web quiz  made to test Frontend developer Knowledge</p>
+          <li>Countdown Timer</li>
+          <p>A tool for countdown the time left to important events</p>
+          <li>Product Upcoming Page</li>
+          <p>A temporary webpage designed to build anticipation for a future product launch</p>
+        </ul>
+     
+        
+      </section>
+
+    </main>
+    <div class="social-wrapper">
+        <a href="https://x.com/MarviOz?t=Bv4A3HS2Mo364BaKNLNVqw&s=09" target="_blank">
+            <img src="https://i.imgur.com/TTFaCCw.jpeg" alt="X icon">
+        </a>
+
+        <a href="https://www.instagram.com/marvi_.66?igsh" target="_blank">
+            <img src="https://i.imgur.com/DT7tltc.jpeg" alt="Instagram icon">
+        </a>
+    </div>
+    <footer>
+        © 2025 • Designed & coded by Marvi
+    </footer>
+
+</body>
+</html>
