@@ -6,4 +6,4 @@ This repository contains front-end projects built following the [roadmap.sh](htt
 
 [Linktree](https://iwn4gg.mimo.run/index.html)
 [Single Page CV](https://roadmap.sh/projects/single-page-cv)
-
+[Basic HTML Website Project](https://roadmap.sh/projects/basic-html-website)
