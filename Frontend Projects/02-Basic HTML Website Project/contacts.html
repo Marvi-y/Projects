@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .perfil {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .foto-perfil {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        footer {
+            margin-top: 35px;
+            font-size: 12px;
+            opacity: 0.6;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ----- FORM STYLE ----- */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 14px;
+            border-radius: 6px;
+            border: 1px solid #aaa;
+            resize: none;
+        }
+
+        button {
+            padding: 12px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .social-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-wrapper img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            transition: 0.25s;
+        }
+
+        .social-wrapper img:hover {
+            transform: scale(1.1);
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+
+            nav a {
+                margin-right: 5px;
+            }
+
+            .foto-perfil {
+                width: 65px;
+                height: 65px;
+            }
+
+            main {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="perfil">
+        <img src="https://i.imgur.com/cEKxO6j.jpg" alt="Profile photo" class="foto-perfil">
+        <h2>Marvi</h2>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="articles.html">Articles</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Contact Me</h1>
+
+    <!-- FORMULÁRIO FUNCIONAL -->
+    <form action="mailto:marvioz007@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your name" required>
+
+        <input type="email" name="email" placeholder="Your email" required>
+
+        <input type="number" name="phone" placeholder="Phone number">
+
+        <textarea name="message" placeholder="Your message..." rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- SOCIAL LINKS -->
+    <div class="social-wrapper">
+        <a href="https://x.com/MarviOz?t=Bv4A3HS2Mo364BaKNLNVqw&s=09" target="_blank">
+            <img src="https://i.imgur.com/TTFaCCw.jpeg" alt="X icon">
+        </a>
+
+        <a href="https://www.instagram.com/marvi_.66?igsh" target="_blank">
+            <img src="https://i.imgur.com/DT7tltc.jpeg" alt="Instagram icon">
+        </a>
+    </div>
+
+</main>
+
+<footer>
+    © 2025 • Designed & coded by Marvi
+</footer>
+
+</body>
+</html>
